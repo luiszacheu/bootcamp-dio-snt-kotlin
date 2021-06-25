@@ -2,7 +2,10 @@ package oop.cliente
 
 import oop.conta.Conta
 
-open class Cliente(pNome: String, pConta: Conta) {
-    private val nome = pNome
-    private val conta = pConta
+abstract class Cliente(pConta: Conta) {
+
+    protected val conta: Conta = pConta
+
+    abstract fun imprimirDadosDoCliente()
+
 }
