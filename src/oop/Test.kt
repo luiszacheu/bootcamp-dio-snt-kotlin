@@ -15,11 +15,15 @@ fun main() {
 
     val contaPoupancaB = ContaPoupanca(321, "321")
     contaPoupancaB.depositar(5.0)
+
     val luis = ClientePessoaJuridica("Luis",  "Bairro Verde", "002", contaPoupancaB)
     luis.imprimirDadosDoCliente()
 
-    contaPoupancaA.transferir(contaPoupancaB, 5.0)
+//    contaPoupancaA.transferir(contaPoupancaB, 5.0)
 
 
+    println(luis.segmento)
+    luis.conta.depositar(20.0)
+    println(luis.segmento)
 
 }
