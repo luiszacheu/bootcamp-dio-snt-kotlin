@@ -5,10 +5,10 @@ import oop.conta.Conta
 class ClientePessoaFisica(
     val nome: String,
     val idade: Int,
-    var endereco: String,
+    pEndereco: Endereco,
     pCpf: String,
     pConta: Conta
-) : Cliente(pConta) {
+) : Cliente(pEndereco, pConta) {
 
     private val cpf = pCpf
 

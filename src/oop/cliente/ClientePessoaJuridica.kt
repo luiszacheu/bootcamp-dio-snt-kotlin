@@ -4,10 +4,10 @@ import oop.conta.Conta
 
 class ClientePessoaJuridica(
     val razaoSocial: String,
-    var endereco: String,
+    pEndereco: Endereco,
     pCnpj: String,
     pConta: Conta
-) : Cliente(pConta) {
+) : Cliente(pEndereco, pConta) {
 
     var cnpj: String = pCnpj
         private set(value) {
